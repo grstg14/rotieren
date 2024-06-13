@@ -8,7 +8,7 @@
         </NuxtLink>
       </template>
     </div>
-    <p>contact: <a href="mailto:maurice@sissirecords.com">maurice@sissirecords.com</a></p>
+    <p>contact: <a href="mailto:maurice@rotieren.com">maurice@sissirecords.com</a></p>
     <p><NuxtLink to="https://www.sissirecords.com" target="_blank">www.sissirecords.com</NuxtLink></p>
   </div>
 </template>
@@ -18,7 +18,7 @@
 const socialLinks = [
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/rotieren',
+    url: 'https://www.instagram.com/rotieren__',
     icon: 'fa-brands fa-instagram-square',
   },
   {
