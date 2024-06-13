@@ -18,7 +18,7 @@
 const socialLinks = [
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/rotieren',
+    url: 'https://www.instagram.com/rotieren__',
     icon: 'fa-brands fa-instagram-square',
   },
   {
