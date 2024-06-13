@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-black h-screen w-screen text-white items-center justify-center">
+  <div class="flex flex-col bg-black h-screen w-screen text-white items-center justify-center py-12">
     <img src="assets/img/rotieren.jpg" class="w-96"/>
     <div class="py-12 flex gap-x-2">
       <template v-for="social in socialLinks" :key="social.url">
