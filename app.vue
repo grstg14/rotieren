@@ -1,12 +1,14 @@
 <template>
-  <div class="flex flex-col bg-black h-screen w-screen text-white items-center justify-center py-12">
-    <NuxtImg
-      provider="imagekit"
-      src="/rotieren/rotieren.jpg"
-      alt="Description of image"
-      sizes="(max-width: 640px) 80vw, (max-width: 768px) 33vw, 33vw"
-      class="w-96 h-auto"
-    />
+  <div class="flex flex-col bg-black h-screen w-screen text-white items-center justify-center">
+    <div class="px-12 lg:p-0">
+      <NuxtImg
+        provider="imagekit"
+        src="/rotieren/rotieren.jpg"
+        alt="Description of image"
+        sizes="(max-width: 640px) 80vw, (max-width: 768px) 33vw, 33vw"
+        class="w-auto lg:w-96 h-auto"
+      />
+    </div>
     <div class="py-12 flex gap-x-2">
       <template
         v-for="social in socialLinks"
