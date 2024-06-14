@@ -2,12 +2,33 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ['~/assets/css/main.css', '@fortawesome/fontawesome-svg-core/styles.css'],
-  modules: [],
+  modules: ['@nuxt/image', '@nuxt/eslint'],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+  },
+  image: {
+    // providers: {
+    imagekit: {
+      baseURL: 'https://ik.imagekit.io/u7a3hnt37/',
+    },
+    //   imagekit: {
+    //     // provider: 'imagekit',
+    //     options: {
+    //       baseURL: 'https://ik.imagekit.io/u7a3hnt37/',
+    //     },
+    //   },
+    // },
+    // provider: 'imagekit',
+  },
+  build: {
+    transpile: ['@fortawesome/vue-fontawesome'],
+  },
 })
