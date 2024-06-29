@@ -47,17 +47,17 @@ const socialLinks = [
   },
   {
     name: 'iTunes',
-    url: '',
+    url: 'https://bfan.link/ich-will-nicht-dass-james-hetfield-stirbt',
     icon: 'fa-brands fa-itunes',
   },
   {
     name: 'Spotify',
-    url: '',
+    url: 'https://bfan.link/ich-will-nicht-dass-james-hetfield-stirbt',
     icon: 'fa-brands fa-spotify',
   },
   {
     name: 'Facebook',
-    url: '',
+    url: 'https://www.facebook.com/rotieren',
     icon: 'fa-brands fa-facebook',
   },
   {
