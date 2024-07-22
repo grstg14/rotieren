@@ -9,7 +9,7 @@
         class="w-auto lg:w-96 h-auto"
       />
     </div>
-    <div class="py-12 flex gap-x-2">
+    <div class="pt-12 pb-4 flex gap-x-2">
       <template
         v-for="social in socialLinks"
         :key="social.url"
@@ -26,7 +26,37 @@
         </NuxtLink>
       </template>
     </div>
-    <p>contact: <a href="mailto:maurice@rotieren.com">maurice@rotieren.com</a></p>
+    <template v-if="showParagraph(new Date('2024-07-26'))">
+      <p>
+        Neue Single „Stiller Moment“ ab 26.07.2024
+      </p>
+      <p>
+        pre-save here (link über pre-save here: <nuxt-link
+          class="underline"
+          to="https://bfan.link/stiller-moment"
+        >
+          https://bfan.link/stiller-moment
+        </nuxt-link>)
+      </p>
+    </template>
+    <p class="mt-4">
+      Album „Immer Zurück“ ab 16.08.2024
+    </p>
+    <p
+      v-show="showParagraph(new Date('2024-08-13'))"
+      class="mt-2"
+    >
+      Album Release Party am 13.08.2024 im
+      <nuxt-link
+        target="_blank"
+        class="underline"
+        to="https://www.facebook.com/share/crhpn74is9C5KuZC/"
+      >B72 </nuxt-link>
+      Wien
+    </p>
+    <p class="mt-4">
+      contact: <a href="mailto:maurice@rotieren.com">maurice@rotieren.com</a>
+    </p>
     <p>
       <NuxtLink
         to="https://www.sissirecords.com"
@@ -39,6 +69,11 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue'
+
+const showParagraph = function (limit: Date): boolean {
+  return new Date() <= limit
+}
 const socialLinks = [
   {
     name: 'Instagram',
@@ -52,8 +87,13 @@ const socialLinks = [
   },
   {
     name: 'Spotify',
-    url: 'https://bfan.link/ich-will-nicht-dass-james-hetfield-stirbt',
+    url: 'https://open.spotify.com/intl-de/artist/3pIhrraIz88BWaa0Rm1zoa',
     icon: 'fa-brands fa-spotify',
+  },
+  {
+    name: 'Apple Music',
+    url: 'https://music.apple.com/at/artist/rotieren/1752904846',
+    icon: 'fa-brands fa-apple',
   },
   {
     name: 'Facebook',
