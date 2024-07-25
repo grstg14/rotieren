@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-black h-screen w-screen text-white items-center justify-center">
+  <div class="flex flex-col bg-black h-screen w-screen text-white items-center justify-center px-4">
     <div class="px-12 lg:p-0">
       <NuxtImg
         provider="imagekit"
@@ -27,10 +27,10 @@
       </template>
     </div>
     <template v-if="showParagraph(new Date('2024-07-26'))">
-      <p>
+      <p class="text-center">
         Neue Single „Stiller Moment“ ab 26.07.2024
       </p>
-      <p>
+      <p class="text-center">
         pre-save here (link über pre-save here: <nuxt-link
           class="underline"
           to="https://bfan.link/stiller-moment"
@@ -39,12 +39,12 @@
         </nuxt-link>)
       </p>
     </template>
-    <p class="mt-4">
+    <p class="mt-4 text-center">
       Album „Immer Zurück“ ab 16.08.2024
     </p>
     <p
       v-show="showParagraph(new Date('2024-08-13'))"
-      class="mt-2"
+      class="mt-2 text-center"
     >
       Album Release Party am 13.08.2024 im
       <nuxt-link
