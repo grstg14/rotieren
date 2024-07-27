@@ -26,19 +26,16 @@
         </NuxtLink>
       </template>
     </div>
-    <template v-if="showParagraph(new Date('2024-07-26'))">
-      <p class="text-center">
-        Neue Single „Stiller Moment“ ab 26.07.2024
-      </p>
-      <p class="text-center">
-        pre-save here (link über pre-save here: <nuxt-link
-          class="underline"
-          to="https://bfan.link/stiller-moment"
-        >
-          https://bfan.link/stiller-moment
-        </nuxt-link>)
-      </p>
-    </template>
+
+    <p class="text-center">
+      Neue Single „Stiller Moment“ out <nuxt-link
+        class="underline"
+        to="https://bfan.link/stiller-moment"
+      >
+        now
+      </nuxt-link>
+    </p>
+
     <p class="mt-4 text-center">
       Album „Immer Zurück“ ab 16.08.2024
     </p>
