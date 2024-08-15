@@ -27,17 +27,20 @@
       </template>
     </div>
 
-    <p class="text-center">
-      Neue Single „Stiller Moment“ out <nuxt-link
-        class="underline"
-        to="https://bfan.link/stiller-moment"
-      >
-        now
-      </nuxt-link>
-    </p>
-
     <p class="mt-4 text-center">
-      Album „Immer Zurück“ ab 16.08.2024
+      Das Album „Immer Zurück“ out now:
+      <nuxt-link
+        target="_blank"
+        class="underline"
+        to="https://bfan.link/immer-zuruck"
+      >digital</nuxt-link> &
+      <nuxt-link
+        target="_blank"
+        class="underline"
+        to="https://www.hoanzl.at/immer-zuruck.html"
+      >
+        auf Vinyl
+      </nuxt-link>
     </p>
     <p
       v-show="showParagraph(new Date('2024-08-13'))"
@@ -78,11 +81,6 @@ const socialLinks = [
     icon: 'fab fa-instagram-square',
   },
   {
-    name: 'iTunes',
-    url: 'https://bfan.link/ich-will-nicht-dass-james-hetfield-stirbt',
-    icon: 'fa-brands fa-itunes',
-  },
-  {
     name: 'Spotify',
     url: 'https://open.spotify.com/intl-de/artist/3pIhrraIz88BWaa0Rm1zoa',
     icon: 'fa-brands fa-spotify',
@@ -99,7 +97,7 @@ const socialLinks = [
   },
   {
     name: 'Hoanzl',
-    url: 'https://www.hoanzl.at',
+    url: 'https://www.hoanzl.at/immer-zuruck.html',
     icon: 'fa-solid fa-dollar-sign',
   },
 ]
