@@ -37,7 +37,7 @@
       <nuxt-link
         target="_blank"
         class="underline"
-        to="https://www.hoanzl.at/immer-zuruck.html"
+        to="https://www.hoanzl.at/immer-zurueck?sku=X1794070-6&term=Rotieren"
       >
         auf Vinyl
       </nuxt-link>
@@ -97,7 +97,7 @@ const socialLinks = [
   },
   {
     name: 'Hoanzl',
-    url: 'https://www.hoanzl.at/immer-zuruck.html',
+    url: 'https://www.hoanzl.at/immer-zurueck?sku=X1794070-6&term=Rotieren',
     icon: 'fa-solid fa-dollar-sign',
   },
 ]
