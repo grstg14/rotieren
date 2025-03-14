@@ -28,6 +28,21 @@
     </div>
 
     <p class="mt-4 text-center">
+      Das Album „Nie Wieder“ out now:
+      <nuxt-link
+        target="_blank"
+        class="underline"
+        to="https://bfan.link/nie-wieder-3"
+      >digital</nuxt-link> &
+      <nuxt-link
+        target="_blank"
+        class="underline"
+        to="http://www.schallter.at/"
+      >
+        auf Tape
+      </nuxt-link>
+    </p>
+    <p class="mt-4 text-center">
       Das Album „Immer Zurück“ out now:
       <nuxt-link
         target="_blank"
